@@ -2,12 +2,12 @@
 
 namespace FileOpen
 {
-    internal sealed class FileOpenPluginLoader : IDisposable
+    internal sealed class DirectoryPluginLoader : IDisposable
     {
         private List<PluginLoadContext> _contexts = new();
         private string _pluginsRelativePath;
 
-        public FileOpenPluginLoader(string pluginsRelativePath)
+        public DirectoryPluginLoader(string pluginsRelativePath)
         {
             this._pluginsRelativePath = pluginsRelativePath;
         }

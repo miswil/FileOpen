@@ -4,7 +4,7 @@ namespace FileOpen
 {
     internal class DelegatePluginFileOpener : IOpenFile
     {
-        private readonly FileOpenPluginLoader _loader;
+        private readonly DirectoryPluginLoader _loader;
         private readonly Dictionary<string, Type> _plugins = new();
 
 
